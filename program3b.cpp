@@ -51,8 +51,12 @@ public:
     }
 
     void display(){
-
-		// TODO: Display every node value in the link list
+        Node * temp = head->getNext();
+        while(temp != nullptr){
+            cout << temp->getValue() << " ";
+            temp = temp->getNext();
+        }
+        cout << endl;
     
 	}
 
